@@ -9,7 +9,7 @@
             "step": "installTheme",
             "themeZipFile": {
                 "resource": "url",
-                "url": "https://raw.githubusercontent.com/Nahuai/un-test/main/uprising-next.zip"
+                "url": "https://freelandev.com/wp-content/uploads/uprising-next.zip"
             }
         },
         {
