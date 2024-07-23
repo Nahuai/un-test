@@ -1,0 +1,27 @@
+{
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "login": true,
+    "siteOptions": {
+        "blogname": "Uprising Next Demo"
+    },
+    "steps": [
+        {
+            "step": "installTheme",
+            "themeZipFile": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/Nahuai/un-test/main/uprising-next.zip"
+            }
+        },
+        {
+            "step": "runPHP",
+            "code": "<?php\nrequire '/wordpress/wp-load.php';\n\n$posts = get_posts(array(\n    'numberposts' => -1,\n    'post_type' => array('post', 'page'),\n    'post_status' => 'any'\n));\n\nforeach ($posts as $post) {\n    wp_delete_post($post->ID, true);\n}"
+        },
+        {
+            "step": "importWxr",
+            "file": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/Nahuai/un-test/main/demo.xml"
+            }
+        }
+    ]
+}
