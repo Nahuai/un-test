@@ -1,7 +1,7 @@
 {
     "$schema": "https://playground.wordpress.net/blueprint-schema.json",
     "login": true,
-    "landingPage": "/",
+    "landingPage": "/wp-admin/themes.php?page=merlin",
     "siteOptions": {
         "blogname": "Uprising Next Demo"
     },
