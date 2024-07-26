@@ -1,6 +1,7 @@
 {
     "$schema": "https://playground.wordpress.net/blueprint-schema.json",
     "login": true,
+    "landingPage": "/wp-admin/themes.php?page=merlin",
     "siteOptions": {
         "blogname": "Uprising Next Demo"
     },
@@ -10,14 +11,7 @@
             "themeZipFile": {
                 "resource": "url",
                 "url": "https://freelandev.com/wp-content/uploads/uprising-next.zip"
-            },
-            "options": {
-                "activate": false
             }
-        },
-        {
-            "step": "activateTheme",
-            "themeFolderName": "uprising-next"
         }
     ]
 }
