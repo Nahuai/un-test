@@ -10,6 +10,9 @@
             "themeZipFile": {
                 "resource": "url",
                 "url": "https://freelandev.com/wp-content/uploads/uprising-next.zip"
+            },
+            "options": {
+                "activate": false
             }
         },
         {
